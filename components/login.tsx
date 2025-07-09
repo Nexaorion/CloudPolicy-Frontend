@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { FiGithub } from "react-icons/fi";
 
 export function LoginForm() {
     return (
@@ -44,17 +45,20 @@ export function LoginForm() {
                                 </div>
                                 <Input id="password" type="password" placeholder="password" required />
                             </div>
+                            <Button type="submit" className="w-full">
+                                登录
+                            </Button>
+                            <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
+                                <span className="bg-card text-muted-foreground relative z-10 px-2">
+                                    或使用第三方登录
+                                </span>
+                            </div>
+                            <Button variant="outline" className="w-full">
+                                <FiGithub /> 通过 Github 登录
+                            </Button>
                         </div>
                     </form>
                 </CardContent>
-                <CardFooter className="flex-col gap-2">
-                    <Button type="submit" className="w-full">
-                        登录
-                    </Button>
-                    <Button variant="outline" className="w-full">
-                        通过 Github 登录
-                    </Button>
-                </CardFooter>
             </Card>
         </div>
 
