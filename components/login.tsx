@@ -3,7 +3,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
@@ -59,6 +58,9 @@ export function LoginForm() {
                         </div>
                     </form>
                 </CardContent>
+                <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
+                    Nexaorion © All rights reserved.
+                </div>
             </Card>
         </div>
 
